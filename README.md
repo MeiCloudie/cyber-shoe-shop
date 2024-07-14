@@ -20,7 +20,9 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 
 4. Thực hành API - Cách gọi data từ API cung cấp sẵn [ShoeShop](https://shop.cyberlearn.vn/swagger/index.html)
 
-5. Deploy project với Vercel.
+5. Thực hành SASS.
+
+6. Deploy project với Vercel.
 
 <hr>
 
@@ -34,7 +36,7 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
         <a href="https://github.com/MeiCloudie">Truong Thuc Van</a>
 		</td>
 		<td align="center" valign="top">
-				<img loading="lazy" width="150" height="150" src="">
+				<img loading="lazy" width="150" height="150" src="https://github.com/NguyenPhamHoangVu?s=150">
         <br>
         <a href="https://github.com/Trungkien1202">Nguyen Pham Hoang Vu</a>
 		</td>
