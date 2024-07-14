@@ -26,6 +26,18 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 
 <hr>
 
+# Thực hành với bài tập Shoe Shop
+
+- Logo thương hiệu Shoe Shop của Nhóm 5: Cyber Shoe Shop
+
+<div align="center">
+	<picture>
+		<img loading="lazy" width="100%" src="./image/logo-cyber-shoe.png" alt="Banner">
+	</picture>
+</div>
+
+<hr>
+
 > Bài làm của Nhóm 5: Trương Thục Vân (Leader) và Nguyễn Phạm Hoàng Vũ.
 
 <table>
