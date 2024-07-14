@@ -32,7 +32,7 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 
 <div align="center">
 	<picture>
-		<img loading="lazy" width="100%" src="./image/logo-cyber-shoe.png" alt="Banner">
+		<img loading="lazy" width="30%" src="./image/logo-cyber-shoe.png" alt="Banner">
 	</picture>
 </div>
 
