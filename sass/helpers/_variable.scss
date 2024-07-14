@@ -1,0 +1,42 @@
+// Colors
+$primary-color: #c40c0c;
+$secondary-color: #ff6500;
+$tertiary-color: #ff8a08;
+$quaternary-color: #ffc100;
+$success-color: #28a745; 
+$info-color: #17a2b8; 
+$warning-color: #ffc107; 
+$danger-color: #dc3545; 
+$light-color: #f5f5eb;
+$dark-color: #1c1c1c;
+
+// Google font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Typography
+$font-family-base: "Montserrat", sans-serif;
+$text-title: 2.25rem;
+$text-sm: 0.875rem; 
+$text-base: 1rem; 
+$text-lg: 1.125rem; 
+$text-xl: 1.25rem; 
+$text-2xl: 1.5rem; 
+$text-3xl: 1.875rem; 
+$text-4xl: 2.25rem; 
+$font-weight-base: 400;
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Spacing
+$spacer: 1rem;
+
+// Border radius
+$border-radius: 0.25rem;
+
+// Box shadow
+$box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

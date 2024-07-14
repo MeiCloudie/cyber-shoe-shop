@@ -1,0 +1,75 @@
+// Responsive font size
+@mixin responsiveFontSize($small, $medium, $large) {
+  font-size: $small;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: $medium;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $large;
+  }
+}
+
+// Responsive container
+@mixin container {
+  width: 100%;
+  padding-right: $spacer;
+  padding-left: $spacer;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1140px;
+  }
+}
+
+// Responsive utilities
+@mixin responsiveUtil($property, $small, $medium, $large, $xlarge) {
+  #{$property}: $small;
+
+  @media (min-width: $breakpoint-sm) {
+    #{$property}: $medium;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    #{$property}: $large;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    #{$property}: $xlarge;
+  }
+}
+
+// Media queries
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}

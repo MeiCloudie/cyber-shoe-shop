@@ -1,5 +1,6 @@
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/responsive";
+
 @import "./base/reset";
 @import "./base/custom";
-
-@import "./helpers/mixin";
-@import "./helpers/variable";

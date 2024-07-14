@@ -1,8 +1,9 @@
+@include typography;
+
 a {
-  text-decoration: none;
+  @include textDecoration(none);
 }
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  @include container;
 }
