@@ -38,7 +38,7 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 		<td align="center" valign="top">
 				<img loading="lazy" width="150" height="150" src="https://github.com/NguyenPhamHoangVu?s=150">
         <br>
-        <a href="https://github.com/Trungkien1202">Nguyen Pham Hoang Vu</a>
+        <a href="https://github.com/NguyenPhamHoangVu">Nguyen Pham Hoang Vu</a>
 		</td>
 	</tr>
 </table>
