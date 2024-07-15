@@ -1,0 +1,28 @@
+.backToTop {
+  text-align: center;
+  color: white;
+  background-color: $secondary-color;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  transform: translateY(50px);
+
+  &:hover {
+    opacity: 1 !important;
+    color: white;
+  }
+  &.active {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 0.8;
+  }
+}
