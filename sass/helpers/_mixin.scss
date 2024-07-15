@@ -29,6 +29,48 @@
   }
 }
 
+// Icon Button styles
+@mixin styleIconButton(
+  $size: 2rem,
+  $bg: $primary-color,
+  $color: #fff,
+  $border-radius: 50%,
+  $padding: 0.5rem,
+  $shadow: $box-shadow,
+  $hover-bg: darken($bg, 10%)
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $size;
+  height: $size;
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: $border-radius;
+  padding: $padding;
+  box-shadow: $shadow;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-bg;
+    color: $color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba($bg, 0.5);
+  }
+
+  i,
+  svg {
+    font-size: 1rem;
+    display: block;
+  }
+}
+
 // Text styles
 @mixin styleText($fs, $fw, $color, $line-height: 1.5, $transform: none) {
   font-size: $fs;

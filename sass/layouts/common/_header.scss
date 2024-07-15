@@ -1,0 +1,64 @@
+.header {
+  .navbar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    .navbar-brand {
+      @include styleText($text-2xl, bold, $light-color);
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            @include styleText($text-lg, 500, $light-color);
+
+            &:hover {
+              color: $secondary-color;
+              @include transition();
+            }
+          }
+
+          .active {
+            color: $secondary-color;
+          }
+        }
+
+        .dropdown {
+          .dropdown-menu {
+            .dropdown-item {
+              @include styleText($text-lg, 500, $dark-color);
+
+              &:hover {
+                background-color: rgba(173, 172, 172, 0.363);
+                color: $secondary-color;
+                @include transition();
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .icon-button {
+      &.btn-search {
+        @include styleIconButton(
+          $size: 2.5rem,
+          $bg: transparent,
+          $color: #fff,
+          $hover-bg: lighten($secondary-color, 10%)
+        );
+      }
+
+      &.btn-cart {
+        @include styleIconButton(
+          $size: 2.5rem,
+          $bg: $secondary-color,
+          $color: #fff,
+          $border-radius: 25px,
+          $padding: 0.5rem 1.7rem,
+          $hover-bg: lighten($secondary-color, 10%)
+        );
+      }
+    }
+  }
+}

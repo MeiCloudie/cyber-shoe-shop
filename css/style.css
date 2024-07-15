@@ -58,7 +58,12 @@ p {
 }
 
 a {
+  color: #f5f5eb;
   text-decoration: none;
+}
+a:hover {
+  color: #ff6500;
+  transition: all 0.5s ease;
 }
 
 .container {
@@ -87,4 +92,97 @@ a {
   .container {
     max-width: 1140px;
   }
+}
+
+.header .navbar {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5f5eb;
+  line-height: 1.5;
+  text-transform: none;
+}
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #f5f5eb;
+  line-height: 1.5;
+  text-transform: none;
+}
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #ff6500;
+  transition: all 0.3s ease;
+}
+.header .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  color: #ff6500;
+}
+.header .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1c1c1c;
+  line-height: 1.5;
+  text-transform: none;
+}
+.header .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(173, 172, 172, 0.363);
+  color: #ff6500;
+  transition: all 0.3s ease;
+}
+.header .navbar .icon-button.btn-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.header .navbar .icon-button.btn-search:hover {
+  background-color: #ff8433;
+  color: #fff;
+}
+.header .navbar .icon-button.btn-search:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+.header .navbar .icon-button.btn-search i,
+.header .navbar .icon-button.btn-search svg {
+  font-size: 1rem;
+  display: block;
+}
+.header .navbar .icon-button.btn-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ff6500;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.header .navbar .icon-button.btn-cart:hover {
+  background-color: #ff8433;
+  color: #fff;
+}
+.header .navbar .icon-button.btn-cart:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 101, 0, 0.5);
+}
+.header .navbar .icon-button.btn-cart i,
+.header .navbar .icon-button.btn-cart svg {
+  font-size: 1rem;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
