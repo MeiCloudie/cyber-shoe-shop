@@ -93,6 +93,11 @@ a:hover {
     max-width: 1140px;
   }
 }
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+  }
+}
 
 main {
   padding-top: 80px;
@@ -224,17 +229,17 @@ main {
   color: #f5f5eb;
 }
 .footer .footer-list_nav {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .footer .footer-list_nav h5 {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.875rem;
 }
 .footer ul li {
   margin: 20px 0;
 }
 .footer .footer-contact {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .footer .footer-contact h5 {
   font-weight: bold;

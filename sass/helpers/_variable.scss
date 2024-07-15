@@ -3,10 +3,10 @@ $primary-color: #c40c0c;
 $secondary-color: #ff6500;
 $tertiary-color: #ff8a08;
 $quaternary-color: #ffc100;
-$success-color: #28a745; 
-$info-color: #17a2b8; 
-$warning-color: #ffc107; 
-$danger-color: #dc3545; 
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
 $light-color: #f5f5eb;
 $dark-color: #1c1c1c;
 
@@ -16,13 +16,13 @@ $dark-color: #1c1c1c;
 // Typography
 $font-family-base: "Montserrat", sans-serif;
 $text-title: 2.25rem;
-$text-sm: 0.875rem; 
-$text-base: 1rem; 
-$text-lg: 1.125rem; 
-$text-xl: 1.25rem; 
-$text-2xl: 1.5rem; 
-$text-3xl: 1.875rem; 
-$text-4xl: 2.25rem; 
+$text-sm: 0.875rem;
+$text-base: 1rem;
+$text-lg: 1.125rem;
+$text-xl: 1.25rem;
+$text-2xl: 1.5rem;
+$text-3xl: 1.875rem;
+$text-4xl: 2.25rem;
 $font-weight-base: 400;
 $line-height-base: 1.5;
 
@@ -31,6 +31,7 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+$breakpoint-xxl: 1536px;
 
 // Spacing
 $spacer: 1rem;
