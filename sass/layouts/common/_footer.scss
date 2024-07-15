@@ -1,0 +1,46 @@
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
+
+  .footer-list_nav {
+    margin-top: 50px;
+
+    h5 {
+      font-weight: bold;
+      font-size: $text-xl;
+    }
+  }
+
+  ul {
+    li {
+      margin: 20px 0;
+    }
+  }
+
+  .footer-contact {
+    margin-top: 50px;
+
+    h5 {
+      font-weight: bold;
+      font-size: $text-2xl;
+      color: $secondary-color;
+      text-transform: uppercase;
+    }
+
+    .btn-send-email {
+      @include styleButton($secondary-color, $light-color);
+    }
+  }
+
+  .social-icons {
+    a {
+      font-size: $text-2xl;
+    }
+  }
+
+  .payment-method {
+    ul {
+      list-style: none;
+    }
+  }
+}
