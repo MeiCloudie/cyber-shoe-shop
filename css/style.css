@@ -345,6 +345,33 @@ main {
   border-color: #ff6500;
   transition: all 0.5s;
 }
+@media (max-width: 576px) {
+  .carousel .carousel-caption .carousel-caption_content button {
+    font-size: 10px;
+    background-color: #f5f5eb;
+    color: #1c1c1c;
+    padding: 0.2rem 1rem;
+    border: 1px solid #f5f5eb;
+    border-radius: 25px;
+    box-shadow: none;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  .carousel .carousel-caption .carousel-caption_content button:hover {
+    background-color: #e4e4c9;
+    color: #1c1c1c;
+  }
+  .carousel .carousel-caption .carousel-caption_content button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(245, 245, 235, 0.5);
+  }
+  .carousel .carousel-caption .carousel-caption_content button:hover {
+    background-color: #ff6500;
+    color: white;
+    border-color: #ff6500;
+    transition: all 0.5s;
+  }
+}
 .carousel .carousel-caption .carousel-caption_shoeimg {
   position: absolute;
   right: 0;
@@ -552,6 +579,169 @@ main {
   color: white;
   border-color: #ff6500;
   transition: all 0.5s;
+}
+@media (max-width: 576px) {
+  .sale .sale1 .sale-item-background1 .sale-item-content button,
+  .sale .sale1 .sale-item-background2 .sale-item-content button,
+  .sale .sale2 .sale-item-background1 .sale-item-content button,
+  .sale .sale2 .sale-item-background2 .sale-item-content button {
+    font-size: 10px;
+    background-color: #f5f5eb;
+    color: #1c1c1c;
+    padding: 0.2rem 1rem;
+    border: 1px solid #f5f5eb;
+    border-radius: 25px;
+    box-shadow: none;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  .sale .sale1 .sale-item-background1 .sale-item-content button:hover,
+  .sale .sale1 .sale-item-background2 .sale-item-content button:hover,
+  .sale .sale2 .sale-item-background1 .sale-item-content button:hover,
+  .sale .sale2 .sale-item-background2 .sale-item-content button:hover {
+    background-color: #e4e4c9;
+    color: #1c1c1c;
+  }
+  .sale .sale1 .sale-item-background1 .sale-item-content button:focus,
+  .sale .sale1 .sale-item-background2 .sale-item-content button:focus,
+  .sale .sale2 .sale-item-background1 .sale-item-content button:focus,
+  .sale .sale2 .sale-item-background2 .sale-item-content button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(245, 245, 235, 0.5);
+  }
+  .sale .sale1 .sale-item-background1 .sale-item-content button:hover,
+  .sale .sale1 .sale-item-background2 .sale-item-content button:hover,
+  .sale .sale2 .sale-item-background1 .sale-item-content button:hover,
+  .sale .sale2 .sale-item-background2 .sale-item-content button:hover {
+    background-color: #ff6500;
+    color: white;
+    border-color: #ff6500;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 1024px) {
+  .sale .sale1,
+  .sale .sale2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sale .sale1 .sale-item-shoe1,
+  .sale .sale1 .sale-item-shoe2,
+  .sale .sale1 .sale-item-background1,
+  .sale .sale1 .sale-item-background2,
+  .sale .sale2 .sale-item-shoe1,
+  .sale .sale2 .sale-item-shoe2,
+  .sale .sale2 .sale-item-background1,
+  .sale .sale2 .sale-item-background2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content,
+  .sale .sale1 .sale-item-background1 .sale-item-content,
+  .sale .sale1 .sale-item-background2 .sale-item-content,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content,
+  .sale .sale2 .sale-item-background1 .sale-item-content,
+  .sale .sale2 .sale-item-background2 .sale-item-content {
+    left: 100px;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content h1,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content h1,
+  .sale .sale1 .sale-item-background1 .sale-item-content h1,
+  .sale .sale1 .sale-item-background2 .sale-item-content h1,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content h1,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content h1,
+  .sale .sale2 .sale-item-background1 .sale-item-content h1,
+  .sale .sale2 .sale-item-background2 .sale-item-content h1 {
+    font-size: 2.25rem;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content p,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content p,
+  .sale .sale1 .sale-item-background1 .sale-item-content p,
+  .sale .sale1 .sale-item-background2 .sale-item-content p,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content p,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content p,
+  .sale .sale2 .sale-item-background1 .sale-item-content p,
+  .sale .sale2 .sale-item-background2 .sale-item-content p {
+    font-size: 1rem;
+  }
+  .sale .sale1 .sale-item-shoe1 h5,
+  .sale .sale1 .sale-item-shoe2 h5,
+  .sale .sale2 .sale-item-shoe1 h5,
+  .sale .sale2 .sale-item-shoe2 h5 {
+    font-size: 1.875rem;
+  }
+  .sale .sale1 .sale-item-shoe1 h2,
+  .sale .sale1 .sale-item-shoe2 h2,
+  .sale .sale2 .sale-item-shoe1 h2,
+  .sale .sale2 .sale-item-shoe2 h2 {
+    font-size: 3.25rem;
+  }
+}
+@media (max-width: 576px) {
+  .sale .sale1,
+  .sale .sale2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sale .sale1 .sale-item-shoe1,
+  .sale .sale1 .sale-item-shoe2,
+  .sale .sale1 .sale-item-background1,
+  .sale .sale1 .sale-item-background2,
+  .sale .sale2 .sale-item-shoe1,
+  .sale .sale2 .sale-item-shoe2,
+  .sale .sale2 .sale-item-background1,
+  .sale .sale2 .sale-item-background2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content,
+  .sale .sale1 .sale-item-background1 .sale-item-content,
+  .sale .sale1 .sale-item-background2 .sale-item-content,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content,
+  .sale .sale2 .sale-item-background1 .sale-item-content,
+  .sale .sale2 .sale-item-background2 .sale-item-content {
+    left: 30px;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content h1,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content h1,
+  .sale .sale1 .sale-item-background1 .sale-item-content h1,
+  .sale .sale1 .sale-item-background2 .sale-item-content h1,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content h1,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content h1,
+  .sale .sale2 .sale-item-background1 .sale-item-content h1,
+  .sale .sale2 .sale-item-background2 .sale-item-content h1 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  .sale .sale1 .sale-item-shoe1 .sale-item-content p,
+  .sale .sale1 .sale-item-shoe2 .sale-item-content p,
+  .sale .sale1 .sale-item-background1 .sale-item-content p,
+  .sale .sale1 .sale-item-background2 .sale-item-content p,
+  .sale .sale2 .sale-item-shoe1 .sale-item-content p,
+  .sale .sale2 .sale-item-shoe2 .sale-item-content p,
+  .sale .sale2 .sale-item-background1 .sale-item-content p,
+  .sale .sale2 .sale-item-background2 .sale-item-content p {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+  }
+  .sale .sale1 .sale-item-shoe1 h5,
+  .sale .sale1 .sale-item-shoe2 h5,
+  .sale .sale2 .sale-item-shoe1 h5,
+  .sale .sale2 .sale-item-shoe2 h5 {
+    font-size: 1.5rem;
+  }
+  .sale .sale1 .sale-item-shoe1 h2,
+  .sale .sale1 .sale-item-shoe2 h2,
+  .sale .sale2 .sale-item-shoe1 h2,
+  .sale .sale2 .sale-item-shoe2 h2 {
+    font-size: 2.25rem;
+  }
 }
 
 .categories {

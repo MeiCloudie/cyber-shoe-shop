@@ -31,7 +31,7 @@
 
 @mixin primaryButton() {
   font-weight: bold;
-  
+
   @include styleButton(
     $bg: $light-color,
     $color: $dark-color,
@@ -44,6 +44,24 @@
     color: white;
     border-color: $secondary-color;
     transition: all 0.5s;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+
+    @include styleButton(
+      $bg: $light-color,
+      $color: $dark-color,
+      $radius: 25px,
+      $padding: 0.2rem 1rem
+    );
+
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+      border-color: $secondary-color;
+      transition: all 0.5s;
+    }
   }
 }
 
