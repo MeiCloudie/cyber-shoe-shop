@@ -1,0 +1,142 @@
+.carousel {
+  height: 60vh;
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+
+  .carousel-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .carousel-caption_content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      margin-top: 50px;
+
+      h5 {
+        font-size: $text-xl;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      button {
+        margin-top: 15px;
+
+        @include styleButton(
+          $bg: $light-color,
+          $color: $dark-color,
+          $radius: 25px,
+          $padding: 0.5rem 1.7rem
+        );
+
+        &:hover {
+          background-color: $secondary-color;
+          color: white;
+          border-color: $secondary-color;
+          transition: all 0.5s;
+        }
+      }
+    }
+
+    .carousel-caption_shoeimg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(0%);
+
+      img {
+        width: 100%;
+        height: auto;
+        animation: moveImage 5s infinite;
+      }
+    }
+
+    @keyframes moveImage {
+      0% {
+        transform: rotate(1deg) translate(2px, 2px);
+      }
+
+      50% {
+        transform: rotate(-1deg) translate(-2px, -2px);
+      }
+
+      100% {
+        transform: rotate(1deg) translate(2px, 2px);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .carousel-caption {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .carousel-caption_content,
+      .carousel-caption_shoeimg {
+        position: static;
+        width: 100%;
+
+        h5 {
+          font-size: $text-lg;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          width: 70%;
+        }
+
+        button {
+          font-size: 0.9rem;
+          padding: 0.4rem 1.2rem;
+        }
+
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
