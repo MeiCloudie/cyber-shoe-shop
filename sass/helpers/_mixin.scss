@@ -30,6 +30,8 @@
 }
 
 @mixin primaryButton() {
+  font-weight: bold;
+  
   @include styleButton(
     $bg: $light-color,
     $color: $dark-color,

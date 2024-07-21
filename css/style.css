@@ -321,6 +321,7 @@ main {
 }
 .carousel .carousel-caption .carousel-caption_content button {
   margin-top: 15px;
+  font-weight: bold;
   background-color: #f5f5eb;
   color: #1c1c1c;
   padding: 0.5rem 1.7rem;
@@ -406,4 +407,149 @@ main {
   .carousel .carousel-caption .carousel-caption_shoeimg img {
     width: 70%;
   }
+}
+
+.sale {
+  display: flex;
+  flex-direction: column;
+}
+.sale .sale1,
+.sale .sale2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.sale .sale1 .sale-item-shoe1,
+.sale .sale1 .sale-item-shoe2,
+.sale .sale2 .sale-item-shoe1,
+.sale .sale2 .sale-item-shoe2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  overflow: hidden;
+}
+.sale .sale1 .sale-item-shoe1 img,
+.sale .sale1 .sale-item-shoe2 img,
+.sale .sale2 .sale-item-shoe1 img,
+.sale .sale2 .sale-item-shoe2 img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s;
+}
+.sale .sale1 .sale-item-shoe1:hover img,
+.sale .sale1 .sale-item-shoe2:hover img,
+.sale .sale2 .sale-item-shoe1:hover img,
+.sale .sale2 .sale-item-shoe2:hover img {
+  transform: scale(1.1);
+}
+.sale .sale1 .sale-item-shoe1 h5,
+.sale .sale1 .sale-item-shoe2 h5,
+.sale .sale2 .sale-item-shoe1 h5,
+.sale .sale2 .sale-item-shoe2 h5 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+}
+.sale .sale1 .sale-item-shoe1 h2,
+.sale .sale1 .sale-item-shoe2 h2,
+.sale .sale2 .sale-item-shoe1 h2,
+.sale .sale2 .sale-item-shoe2 h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.sale .sale1 .sale-item-background1,
+.sale .sale1 .sale-item-background2,
+.sale .sale2 .sale-item-background1,
+.sale .sale2 .sale-item-background2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 55vh;
+  overflow: hidden;
+}
+.sale .sale1 .sale-item-background1 img,
+.sale .sale1 .sale-item-background2 img,
+.sale .sale2 .sale-item-background1 img,
+.sale .sale2 .sale-item-background2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: transform 0.4s;
+}
+.sale .sale1 .sale-item-background1:hover img,
+.sale .sale1 .sale-item-background2:hover img,
+.sale .sale2 .sale-item-background1:hover img,
+.sale .sale2 .sale-item-background2:hover img {
+  transform: scale(1.1);
+}
+.sale .sale1 .sale-item-background1 .sale-item-content,
+.sale .sale1 .sale-item-background2 .sale-item-content,
+.sale .sale2 .sale-item-background1 .sale-item-content,
+.sale .sale2 .sale-item-background2 .sale-item-content {
+  position: absolute;
+  top: 50%;
+  left: 240px;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left;
+}
+.sale .sale1 .sale-item-background1 .sale-item-content h1,
+.sale .sale1 .sale-item-background2 .sale-item-content h1,
+.sale .sale2 .sale-item-background1 .sale-item-content h1,
+.sale .sale2 .sale-item-background2 .sale-item-content h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sale .sale1 .sale-item-background1 .sale-item-content p,
+.sale .sale1 .sale-item-background2 .sale-item-content p,
+.sale .sale2 .sale-item-background1 .sale-item-content p,
+.sale .sale2 .sale-item-background2 .sale-item-content p {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+.sale .sale1 .sale-item-background1 .sale-item-content button,
+.sale .sale1 .sale-item-background2 .sale-item-content button,
+.sale .sale2 .sale-item-background1 .sale-item-content button,
+.sale .sale2 .sale-item-background2 .sale-item-content button {
+  font-weight: bold;
+  background-color: #f5f5eb;
+  color: #1c1c1c;
+  padding: 0.5rem 1.7rem;
+  border: 1px solid #f5f5eb;
+  border-radius: 25px;
+  box-shadow: none;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.sale .sale1 .sale-item-background1 .sale-item-content button:hover,
+.sale .sale1 .sale-item-background2 .sale-item-content button:hover,
+.sale .sale2 .sale-item-background1 .sale-item-content button:hover,
+.sale .sale2 .sale-item-background2 .sale-item-content button:hover {
+  background-color: #e4e4c9;
+  color: #1c1c1c;
+}
+.sale .sale1 .sale-item-background1 .sale-item-content button:focus,
+.sale .sale1 .sale-item-background2 .sale-item-content button:focus,
+.sale .sale2 .sale-item-background1 .sale-item-content button:focus,
+.sale .sale2 .sale-item-background2 .sale-item-content button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(245, 245, 235, 0.5);
+}
+.sale .sale1 .sale-item-background1 .sale-item-content button:hover,
+.sale .sale1 .sale-item-background2 .sale-item-content button:hover,
+.sale .sale2 .sale-item-background1 .sale-item-content button:hover,
+.sale .sale2 .sale-item-background2 .sale-item-content button:hover {
+  background-color: #ff6500;
+  color: white;
+  border-color: #ff6500;
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */
