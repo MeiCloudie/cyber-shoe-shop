@@ -1,6 +1,7 @@
 .categories {
   text-align: center;
   padding: 50px 20px;
+  background-color: $primary-bg-color;
 
   h2 {
     font-size: $text-title;
@@ -52,13 +53,13 @@
         text-align: left;
 
         h3 {
-          font-size: 1.5rem;
+          font-size: $text-2xl;
           margin-bottom: 5px;
           font-weight: bold;
         }
 
         a {
-          font-size: 1rem;
+          font-size: $text-lg;
           color: $light-color;
           text-decoration: none;
           position: relative;
@@ -78,6 +79,53 @@
 
     .category-item:nth-child(1) {
       grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .category-list {
+      .category-item {
+        height: 20vh;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: $text-4xl;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    .category-list {
+      display: flex;
+      flex-direction: column;
+      .category-item {
+        height: 20vh;
+
+        img {
+          object-position: top;
+        }
+
+        .category-overlay {
+          height: 70px;
+        }
+
+        .category-info {
+          bottom: 10px;
+
+          h3 {
+            font-size: $text-base;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-size: $text-sm;
+          }
+        }
+      }
     }
   }
 }
