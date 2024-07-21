@@ -65,9 +65,9 @@
       .sale-item-content {
         position: absolute;
         top: 50%;
-        left: 240px;
+        left: 200px;
         transform: translateY(-50%);
-        color: #fff;
+        color: $light-color;
         text-align: left;
 
         h1 {

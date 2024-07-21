@@ -496,16 +496,16 @@ main {
 .sale .sale2 .sale-item-background2 .sale-item-content {
   position: absolute;
   top: 50%;
-  left: 240px;
+  left: 200px;
   transform: translateY(-50%);
-  color: #fff;
+  color: #f5f5eb;
   text-align: left;
 }
 .sale .sale1 .sale-item-background1 .sale-item-content h1,
 .sale .sale1 .sale-item-background2 .sale-item-content h1,
 .sale .sale2 .sale-item-background1 .sale-item-content h1,
 .sale .sale2 .sale-item-background2 .sale-item-content h1 {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -552,4 +552,78 @@ main {
   color: white;
   border-color: #ff6500;
   transition: all 0.5s;
+}
+
+.categories {
+  text-align: center;
+  padding: 50px 20px;
+}
+.categories h2 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.categories p {
+  font-size: 1rem;
+  color: #1c1c1c;
+  margin-bottom: 40px;
+}
+.categories .category-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.categories .category-list .category-item {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+}
+.categories .category-list .category-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: transform 0.3s;
+}
+.categories .category-list .category-item .category-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background-color: #c40c0c;
+  opacity: 0.5;
+}
+.categories .category-list .category-item .category-info {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  z-index: 2;
+  color: #f5f5eb;
+  text-align: left;
+}
+.categories .category-list .category-item .category-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.categories .category-list .category-item .category-info a {
+  font-size: 1rem;
+  color: #f5f5eb;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+.categories .category-list .category-item .category-info a:hover {
+  color: #ffc100;
+}
+.categories .category-list .category-item:hover img {
+  transform: scale(1.1);
+}
+.categories .category-list .category-item:nth-child(1) {
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
