@@ -167,7 +167,7 @@ main {
   font-size: 1rem;
   display: block;
 }
-.header .navbar .icon-button.btn-cart {
+.header .navbar .icon-button.btn-cart-header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -182,16 +182,16 @@ main {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   cursor: pointer;
 }
-.header .navbar .icon-button.btn-cart:hover {
+.header .navbar .icon-button.btn-cart-header:hover {
   background-color: #ff8433;
   color: #fff;
 }
-.header .navbar .icon-button.btn-cart:focus {
+.header .navbar .icon-button.btn-cart-header:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(255, 101, 0, 0.5);
 }
-.header .navbar .icon-button.btn-cart i,
-.header .navbar .icon-button.btn-cart svg {
+.header .navbar .icon-button.btn-cart-header i,
+.header .navbar .icon-button.btn-cart-header svg {
   font-size: 1rem;
   display: block;
 }
