@@ -54,4 +54,31 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
       });
   }
 });
+function validateInputs(name, email, password, phone) {
+  const errors = {};
 
+  // Name validation
+  if (!name || name.length > 20) {
+    errors.name = "Name is required and must be less than 20 characters.";
+  }
+
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email || !emailRegex.test(email)) {
+    errors.email = "A valid email is required.";
+  }
+
+  // Password validation
+  if (!password || password.length < 8) {
+    errors.password = "Password is required and must be at least 8 characters.";
+  }
+
+  // Phone validation
+  const phoneRegex =
+    /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
+  if (!phone || !phoneRegex.test(phone)) {
+    errors.phone = "A valid phone number is required.";
+  }
+
+  return errors;
+}
