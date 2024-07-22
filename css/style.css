@@ -1060,4 +1060,204 @@ main {
 }
 .blog .carousel .carousel-inner .carousel-item .carousel-caption .blogger .blogger-info h5 {
   font-size: 0.875rem;
+}
+
+.details {
+  margin-top: 50px;
+  color: #1c1c1c;
+}
+.details .shoeimg img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(238, 201, 176, 0.2196078431);
+  border-radius: 0.5rem;
+}
+.details .shoeinfo h3 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.details .shoeinfo span {
+  margin-top: 10px;
+  color: #c40c0c;
+  font-weight: bold;
+}
+.details .shoeinfo p {
+  margin-top: 20px;
+  text-wrap: pretty;
+}
+.details .shoeinfo h5 {
+  margin: 20px 0;
+}
+.details .shoeinfo .size {
+  display: flex;
+  align-items: center;
+}
+.details .shoeinfo .size p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.details .shoeinfo .action {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.details .shoeinfo .action h3 {
+  font-size: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: normal;
+}
+.details .shoeinfo .action h3:hover {
+  color: #ff6500;
+}
+.details .shoeinfo .cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+.details .shoeinfo .cart-buttons .btn-addToCart {
+  width: 30%;
+  font-weight: bold;
+  background-color: #f5f5eb;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+}
+.details .shoeinfo .cart-buttons .btn-addToCart.active, .details .shoeinfo .cart-buttons .btn-addToCart:hover {
+  background-color: #ff6500;
+  color: #f5f5eb;
+  border-color: #ff6500;
+}
+.details .shoeinfo .cart-buttons .btn-buyItNow {
+  width: 70%;
+  font-weight: bold;
+  background-color: #ff6500;
+  color: #f5f5eb;
+  border: 1px solid #ff6500;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+}
+.details .shoeinfo .cart-buttons .btn-buyItNow.active, .details .shoeinfo .cart-buttons .btn-buyItNow:hover {
+  background-color: #ff8433;
+  color: #f5f5eb;
+  border-color: #ff6500;
+}
+.details .shoeinfo .btn-size {
+  font-weight: bold;
+  background-color: #f5f5eb;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+}
+.details .shoeinfo .btn-size.active, .details .shoeinfo .btn-size:hover {
+  background-color: #ff6500;
+  color: #f5f5eb;
+  border-color: #ff6500;
+}
+@media (max-width: 1550px) {
+  .details .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details .row .shoeimg {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .details .shoeimg img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.related-products {
+  margin: 100px 0;
+}
+.related-products h3 {
+  margin-bottom: 30px;
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+.related-products .card {
+  border: 1px solid #e6e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(238, 201, 176, 0.2196078431);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.related-products .card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.related-products .card:hover img {
+  transform: scale(1.1);
+}
+.related-products .card .card-body {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f5f5eb;
+  height: 150px;
+  position: relative;
+}
+.related-products .card .card-body .card-body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.related-products .card .card-body .card-body-content .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.related-products .card .card-body .card-body-content .card-price {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.related-products .card .card-body .card-body-action button.btn-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff6500;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 1.5rem 2.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.related-products .card .card-body .card-body-action button.btn-cart:hover {
+  background-color: #ff8433;
+  color: #fff;
+}
+.related-products .card .card-body .card-body-action button.btn-cart:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 101, 0, 0.5);
+}
+.related-products .card .card-body .card-body-action button.btn-cart i,
+.related-products .card .card-body .card-body-action button.btn-cart svg {
+  font-size: 1rem;
+  display: block;
+}
+@media (max-width: 1024px) {
+  .related-products .card .card-body .card-body-content .card-title {
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=style.css.map */

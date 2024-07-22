@@ -43,7 +43,7 @@ function layDanhSachGiay() {
 
 layDanhSachGiay()
 
-function duaNguoiDiToi(id) {
+function xemChiTiet(id) {
   window.location.href = `http://127.0.0.1:5500/detail.html?id=${id}`
 }
 
@@ -52,7 +52,7 @@ function addEventListeners() {
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       const id = this.getAttribute("data-id")
-      duaNguoiDiToi(id)
+      xemChiTiet(id)
     })
   })
 }

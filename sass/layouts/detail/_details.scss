@@ -1,0 +1,108 @@
+.details {
+  margin-top: 50px;
+  color: $dark-color;
+
+  .shoeimg {
+    img {
+      box-shadow: $box-shadow;
+      background-color: $primary-bg-color;
+      border-radius: $border-radius;
+    }
+  }
+
+  .shoeinfo {
+    h3 {
+      font-size: $text-title;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    span {
+      margin-top: 10px;
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 20px;
+      text-wrap: pretty;
+    }
+
+    h5 {
+      margin: 20px 0;
+    }
+
+    .size {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: $text-lg;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+    }
+
+    .action {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+
+      h3 {
+        font-size: $text-base;
+        transition: all 0.5s;
+        cursor: pointer;
+        font-weight: normal;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .cart-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+
+      .btn-addToCart {
+        width: 30%;
+        @include secondaryButton();
+      }
+
+      .btn-buyItNow {
+        width: 70%;
+        @include tertiaryButton();
+      }
+    }
+
+    .btn-size {
+      @include secondaryButton();
+    }
+  }
+
+  @media (max-width: 1550px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .shoeimg {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .shoeimg {
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+}
