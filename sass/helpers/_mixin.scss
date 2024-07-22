@@ -65,6 +65,22 @@
   }
 }
 
+@mixin secondaryButton() {
+  font-weight: bold;
+  background-color: $light-color;
+  color: $dark-color;
+  border: 1px solid $dark-color;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+
+  &.active,
+  &:hover {
+    background-color: $secondary-color;
+    color: $light-color;
+    border-color: $secondary-color;
+  }
+}
+
 // Icon Button styles
 @mixin styleIconButton(
   $size: 2rem,

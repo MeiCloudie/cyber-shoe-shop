@@ -373,7 +373,97 @@
       </section>
 
       <!-- SECTION: PRODUCTS -->
-      <section class="products"></section>
+      <section class="products">
+        <div class="container">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="nav-title">
+              <h1 class="fw-bold animate__animated wow animate__fadeIn">
+                Our Products
+              </h1>
+              <p class="animate__animated wow animate__fadeInDown">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas, explicabo!
+              </p>
+            </div>
+
+            <div class="nav-list animate__animated wow animate__fadeIn">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-adidas-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-adidas"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-adidas"
+                  aria-selected="true"
+                >
+                  Adidas
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-vansconverse-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-vansconverse"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-vansconverse"
+                  aria-selected="false"
+                >
+                  Vans Converse
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-nike-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-nike"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-nike"
+                  aria-selected="false"
+                >
+                  Nike
+                </button>
+              </li>
+            </div>
+          </ul>
+
+          <!-- Content in Tab -->
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-adidas"
+              role="tabpanel"
+              aria-labelledby="pills-adidas-tab"
+            >
+              <!-- Dữ liệu giày với Category Adidas -->
+              <div class="row" id="duLieuGiayAdidas"></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-vansconverse"
+              role="tabpanel"
+              aria-labelledby="pills-vansconverse-tab"
+            >
+              <!-- Dữ liệu giày với Category VansConverse -->
+              <div class="row" id="duLieuGiayVansConverse"></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-nike"
+              role="tabpanel"
+              aria-labelledby="pills-nike-tab"
+            >
+              <!-- Dữ liệu giày với Category Nike -->
+              <div class="row" id="duLieuGiayNike"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- SECTION: BLOG -->
       <section class="blog"></section>
@@ -741,8 +831,16 @@
       new WOW().init()
     </script>
 
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Main JavaScript -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <script src="./js/backtotop.js"></script>
   </body>
 </html>

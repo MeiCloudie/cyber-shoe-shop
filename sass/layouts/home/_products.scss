@@ -1,0 +1,140 @@
+.products {
+  margin: 70px 0;
+  background-color: $light-color;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-title {
+      h1 {
+        font-size: $text-title;
+      }
+
+      p {
+        font-size: $text-lg;
+      }
+    }
+
+    .nav-list {
+      display: flex;
+      gap: 20px;
+
+      .nav-item {
+        font-size: $text-lg;
+        button {
+          @include secondaryButton();
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .nav-title {
+        h1 {
+          font-size: $text-title;
+        }
+
+        p {
+          font-size: $text-lg;
+        }
+      }
+    }
+
+    @media (max-width: 576px) {
+      .nav-title {
+        h1 {
+          font-size: $text-4xl;
+        }
+
+        p {
+          font-size: $text-base;
+        }
+      }
+
+      .nav-list {
+        gap: 10px;
+
+        .nav-item {
+          font-size: $text-sm;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      .card {
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        overflow: hidden;
+        text-align: center;
+        background-color: $primary-bg-color;
+        box-shadow: $box-shadow;
+
+        img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s;
+        }
+
+        &:hover img {
+          transform: scale(1.1);
+        }
+
+        .card-body {
+          padding: 30px;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          background-color: $light-color;
+          height: 150px;
+          position: relative;
+
+          .card-body-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+
+            .card-title {
+              font-size: $text-2xl;
+              font-weight: bold;
+              text-transform: capitalize;
+            }
+
+            .card-price {
+              position: absolute;
+              bottom: 10px;
+              font-weight: 500;
+              font-size: $text-xl;
+            }
+          }
+
+          .card-body-action {
+            button.btn-cart {
+              @include styleIconButton(
+                $size: 3rem,
+                $bg: $secondary-color,
+                $color: #fff,
+                $border-radius: 25px,
+                $padding: 1.5rem 2.2rem,
+                $hover-bg: lighten($secondary-color, 10%)
+              );
+            }
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .card-body {
+            .card-body-content {
+              .card-title {
+                font-size: $text-xl;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

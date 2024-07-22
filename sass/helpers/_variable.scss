@@ -13,6 +13,9 @@ $dark-color: #1c1c1c;
 // Background Colors
 $primary-bg-color: #eec9b038;
 
+// Border Colors
+$border-color: #e6e0e0;
+
 // Google font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -40,7 +43,7 @@ $breakpoint-xxl: 1536px;
 $spacer: 1rem;
 
 // Border radius
-$border-radius: 0.25rem;
+$border-radius: 0.5rem;
 
 // Box shadow
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
