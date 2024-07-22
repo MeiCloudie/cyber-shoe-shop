@@ -36,6 +36,20 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 	</picture>
 </div>
 
+- Phân công công việc:
+
+| Họ Tên               | Đóng Góp Cho Dự Án |
+| -------------------- | ------------------ |
+| Trương Thục Vân      | 80%                |
+| Nguyễn Phạm Hoàng Vũ | 20%                |
+
+- Dự án gồm các nhánh sau:
+
+  - Nhánh `master`: Là nhánh chính, dùng để Deploy dự án.
+  - Nhánh `dev`: Dùng để tổng hợp code, merge các nhánh phụ.
+  - Nhánh `truongthucvan`: Nhánh code xây dựng tính năng của thành viên Trương Thục Vân.
+  - Nhánh `hoangvu`: Nhánh code xây dựng tính năng của thành viên Nguyễn Phạm Hoàng Vũ.
+
 <hr>
 
 > Bài làm của Nhóm 5: Trương Thục Vân (Leader) và Nguyễn Phạm Hoàng Vũ.
