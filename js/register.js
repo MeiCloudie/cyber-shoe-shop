@@ -98,3 +98,7 @@ function displayErrors(errors) {
     document.getElementById("signup-form").prepend(apiErrorElement);
   }
 }
+function clearErrors() {
+  const errorElements = document.querySelectorAll(".text-danger");
+  errorElements.forEach((el) => el.remove());
+}
