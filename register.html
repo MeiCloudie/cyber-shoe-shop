@@ -145,9 +145,73 @@
 
     <!-- MAIN -->
     <main class="main">
-      <h1>Main Top - Register</h1>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <h1>Main Bottom</h1>
+      <!-- SECTION: SIGNUP -->
+      <section class="signup">
+        <div class="signup-overlay"></div>
+        <div class="container">
+          <!-- Form Sign Up -->
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+              <div class="card shadow">
+                <h2 class="text-center mb-3">Sign Up</h2>
+                <p class="text-center">
+                  Already have an account? <a href="/signin.html">Sign In</a>
+                </p>
+                <form id="signup-form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender" required>
+                      <option value="true">Male</option>
+                      <option value="false">Female</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      required
+                    />
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-create-account w-100">
+                      Create
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

@@ -1260,4 +1260,55 @@ main {
   .related-products .card .card-body .card-body-content .card-title {
     font-size: 1.25rem;
   }
+}
+
+.signup {
+  padding: 100px 0;
+  position: relative;
+  background-image: url(../../../image/bgsignup.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.signup .signup-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.signup .container .card {
+  background-color: #f5f5eb;
+  padding: 50px;
+}
+.signup .container .card h2 {
+  font-weight: bold;
+  font-size: 3.25rem;
+}
+.signup .container .card a {
+  color: #1c1c1c;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.signup .container .card a:hover {
+  color: #ff6500;
+}
+.signup .container .card input,
+.signup .container .card select {
+  border-radius: 25px;
+}
+.signup .container .card .btn-create-account {
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #ff6500;
+  color: #f5f5eb;
+  border: 1px solid #ff6500;
+  border-radius: 25px;
+  padding: 0.5rem 1.7rem;
+}
+.signup .container .card .btn-create-account.active, .signup .container .card .btn-create-account:hover {
+  background-color: #ff8433;
+  color: #f5f5eb;
+  border-color: #ff6500;
 }/*# sourceMappingURL=style.css.map */
