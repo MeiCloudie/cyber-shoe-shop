@@ -82,3 +82,19 @@ function validateInputs(name, email, password, phone) {
 
   return errors;
 }
+function displayErrors(errors) {
+  Object.keys(errors).forEach((key) => {
+    const errorElement = document.createElement("div");
+    errorElement.className = "text-danger mt-1";
+    errorElement.innerText = errors[key];
+    const inputElement = document.getElementById(key);
+    inputElement.parentNode.appendChild(errorElement);
+  });
+
+  if (errors.apiError) {
+    const apiErrorElement = document.createElement("div");
+    apiErrorElement.className = "text-danger mt-1";
+    apiErrorElement.innerText = errors.apiError;
+    document.getElementById("signup-form").prepend(apiErrorElement);
+  }
+}
