@@ -79,7 +79,7 @@ function renderSizeGiay(arrSize) {
 }
 
 function xemChiTiet(id) {
-  window.location.href = `http://127.0.0.1:5500/detail.html?id=${id}`
+  window.location.href = `https://cyber-shoe-shop-group5-bcs12.vercel.app/detail.html?id=${id}`
 }
 
 function addEventListeners() {
